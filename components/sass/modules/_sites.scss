@@ -1,0 +1,57 @@
+#sites {
+	background: $darkBlue;
+		h1{
+			padding: 0 20px;
+		}
+	/*heading {
+		//margin-top: 20px 0;
+		@include container(90%);
+		@include breakpoint($medium) {
+			@include container;
+			@include pad(1,1);
+		} //breakpoint
+	} //heading
+	*/
+
+	.site {
+		@include container(100%);
+		@include pad(1,1);
+
+		@include display-flex();
+		@include align-items(center);
+		@include justify-content(center);
+
+		@include breakpoint($small) {
+			@include pad(7,1);
+		} //breakpoint small
+	padding: 200px 0;
+
+		.content {
+			@include border-radius(10px);
+			background: rgba($light, .8);
+			padding: 20px;
+
+			h1 {
+				color: $red;
+			} //h1
+
+		} //.content
+	} //.site
+
+	#horseshoeBay {
+			@include backImage('../images/sites/horseshoeBay.jpg');
+		} //#horseshoeBay
+
+	#bluff {
+			@include backImage('../images/sites/bluff1.jpg');
+		} //#bluff
+
+	#graniteIsland {
+			@include backImage('../images/sites/graniteIsland1.jpg');
+		} //#graniteIsland
+
+	#aldingaBay {
+			@include backImage('../images/sites/aldingaBay.jpg');
+		} //#aldingaBay
+} //#sites
+

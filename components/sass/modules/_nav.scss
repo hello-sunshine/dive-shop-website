@@ -1,0 +1,67 @@
+header #nav {
+	.navbar {
+		@include container(100%);
+		background: $darkBlue;
+		//@include backGradient();
+		
+
+			a {
+				color: $navForeground;
+				text-decoration: none;
+				text-align: center;
+				display: inline-block;
+				padding: 5px;
+				font-size: 1.5em;
+
+				@include breakpoint(max-width $small) {
+					font-size: 1.2em;
+					span {
+						display: none;
+					}
+				} //breakpoint
+
+			} //a
+
+		ul {
+			@include span(8 at 4 of 12);
+			li {
+				float: left;
+				a {
+					color: $light;
+					//@include backGradient();
+					background: $darkBlue;
+					font: $mainFont;
+					font-size: 1em;
+					display: inline-block;
+					padding: 10px 10px 10px 45px;
+					text-decoration: none;
+
+					/* &:hover {
+						background-color: $navHover;
+						color: $dark;
+					} //hover
+					*/
+
+					@include breakpoint(0 $small) {
+						padding: 10px 12px;
+						&::after {
+							content: '\000a0';
+							display: block;
+						}
+						span {display: none};
+					} //breakpoint
+
+					@include breakpoint($small $medium) {
+						padding-left: 15px;
+					} //breakpoint
+
+					&.active {
+						background-color: $red;
+						color: $light;
+					}
+				} //a
+			} //li
+		} //ul
+	} //.navbar
+} //header #nav
+

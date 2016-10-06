@@ -1,0 +1,48 @@
+//@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,100);
+
+@include border-box-sizing;
+
+$susy: (
+	columns: 12,
+	container: 60em,
+	gutters: 1/4,
+	gutter-position: inside
+);
+
+$narrow: 400px;
+$small: 650px;
+$medium: 960px;
+$wide: 1200px;
+
+//Add Color Palette
+$darkBlue	: #01172e;
+$blue		: #063642;
+$lightblue	: #25aad5;
+$green		: #45B29D;
+$yellow		: #EFC94C;
+$orange		: #E27A3F;
+$red		: #DF4848;
+$pink		: #CD0069;
+$purple		: #6C71C4;
+$dark		: #000000;
+$light		: #ffffff;
+
+$backgroundColor	: $darkBlue;
+$typeDefault		: $light;
+$typeSites			: $dark;
+$navBackground		: $blue;
+$navForeground		: $light;
+$navHover			: $lightblue;
+$headersubBg		: $dark;
+
+//Font variables
+$fontfamily			: 'Lato', Arial, sans-serif;
+
+$thin	: 100;
+$normal	: 400;
+$bold	: 700;
+
+$headFont	: $bold 1.5em/1.5em $fontfamily;
+$mainFont	: $thin 1em/1em $fontfamily;
+$headColor	: $lightblue;

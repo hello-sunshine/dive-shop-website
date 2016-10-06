@@ -1,0 +1,44 @@
+#intro {	
+	 .fullheight {
+		@include backImage('../images/welcomePage.jpg');
+
+		@include container(100%);
+		@include display-flex();
+		@include align-items(center);
+		@include justify-content(center);
+
+		.hgroup {
+			padding: 100px 0;
+
+			h1 {
+				color: $light;
+				font-size: 5em;
+				font-weight: $bold;
+				line-height: .8em;
+				@include text-shadow($dark 0 0 20px);
+				text-align: center;
+			} //h1
+
+			h2 {
+				display: block;
+				color: $light;
+				width: 90%;
+				max-width: 350px;
+				margin: 0 auto;
+				text-align: center;
+				padding: 10px;
+				font-size: 1.3em;
+				line-height: .9em;
+				@include text-shadow($dark 0 0 20px);
+			} //h2
+
+			p {
+				text-align: center;
+			} //p
+			a {
+				text-decoration: none;
+				color: $light;
+			}
+		} //.hgroup
+	} //fullheight
+} //intro

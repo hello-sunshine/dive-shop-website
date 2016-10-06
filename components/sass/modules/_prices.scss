@@ -1,0 +1,22 @@
+#prices {
+		@include clearfix;
+		@include backGradient();
+			section {
+				@include breakpoint($small) {
+					@include span(1 of 3);
+					} //breakpoint
+				@include breakpoint(450px $small) {
+					&#packagePrice {
+						@include span (1 of 2)
+					} //packagePrice
+				} //breakpoint
+
+				h2 {
+					color: lighten($purple, 20);
+					font-size: 1.3em;
+					line-height: 110%;
+					padding: 10px 0;
+				} //h2
+			} //section
+} //prices
+

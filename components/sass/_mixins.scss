@@ -1,0 +1,45 @@
+@mixin backImage (
+$image,
+$grDir: to bottom,
+$opStart: 0,
+$opEnd: 0,
+$bgPos: center center
+) {
+	background: linear-gradient(
+		$grDir,
+		rgba(153,255,255, $opStart),
+		rgba(1,14,31, $opEnd)
+	) , url($image);
+	background-repeat: no-repeat;
+	background-position: $bgPos;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+} // backImage
+
+@mixin backGradient (
+$opStart: 2,
+$opEnd: 3,
+$height: 1300px,
+$width: 1500px
+) {
+	background: radial-gradient(
+		$height,
+		$width,
+		rgba(75,215,248, $opStart),
+		rgba(10,63,117, $opEnd)
+	);
+	background-repeat: repeat;
+} // backGradient
+
+@mixin clearfix {
+	&:before,
+	&:after {
+		content: '';
+		display: table;
+	} // before, after
+	&:after {
+		clear: both;
+	} // after
+} // clearfix

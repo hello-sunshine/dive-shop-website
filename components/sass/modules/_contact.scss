@@ -1,0 +1,38 @@
+/*form styling*/
+#contact {
+	//@include backGradient();
+	#form {
+		@include container(100%);
+		
+		fieldset {
+			@include breakpoint($narrow $small) {
+					@include span(1 of 2);
+					} //breakpoint
+					
+			margin-bottom: 2em;	
+			margin-right: 2em;
+			border: none;
+			float: left;
+		}
+		
+		input {
+			margin-bottom: 1em;
+		}
+		
+		legend {
+			font-weight: bold;	
+			padding-bottom: 1.5em;
+		}
+		label {
+			display: block;
+			font-size: 1em;
+		}
+		
+		textarea {
+			display: block;
+			margin-bottom: 1.5em;
+			width: 20em;	
+			height: 5em;	
+		}
+	}
+}

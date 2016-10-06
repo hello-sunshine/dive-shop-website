@@ -1,0 +1,566 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,100);
+/* line 5, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 21, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.2.12/sass/susy/language/susy/_box-sizing.scss */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 1, ../../../components/sass/_base.scss */
+body {
+  font: 100 1em/1em "Lato", Arial, sans-serif;
+  background: #01172e;
+  color: #ffffff;
+}
+/* line 5, ../../../components/sass/_base.scss */
+body .site {
+  color: #000000;
+}
+
+/* line 10, ../../../components/sass/_base.scss */
+h1, h2, h3, h4, h5, h6 {
+  font: 700 1.5em/1.5em "Lato", Arial, sans-serif;
+  color: #25aad5;
+  font-weight: 700;
+}
+
+/* line 16, ../../../components/sass/_base.scss */
+strong {
+  font-weight: 700;
+}
+
+/* line 20, ../../../components/sass/_base.scss */
+p {
+  font-weight: 100;
+  padding-bottom: 10px;
+}
+
+/* line 1, ../../../components/sass/_layout.scss */
+body {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 7, ../../../components/sass/_layout.scss */
+.scene {
+  position: relative;
+  padding: 20px 0;
+}
+/* line 11, ../../../components/sass/_layout.scss */
+.scene article {
+  max-width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 12, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
+.scene article:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+@media (min-width: 1200px) {
+  /* line 7, ../../../components/sass/_layout.scss */
+  .scene {
+    padding: 40px 0;
+  }
+}
+@media (min-width: 960px) {
+  /* line 20, ../../../components/sass/_layout.scss */
+  .scene article {
+    max-width: 60em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 12, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
+  .scene article:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+}
+
+/* line 37, ../../../components/sass/_mixins.scss */
+#about:before, #about:after {
+  content: '';
+  display: table;
+}
+/* line 42, ../../../components/sass/_mixins.scss */
+#about:after {
+  clear: both;
+}
+
+/*form styling*/
+/* line 4, ../../../components/sass/modules/_contact.scss */
+#contact #form {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 12, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
+#contact #form:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+/* line 7, ../../../components/sass/modules/_contact.scss */
+#contact #form fieldset {
+  margin-bottom: 2em;
+  margin-right: 2em;
+  border: none;
+  float: left;
+}
+@media (min-width: 400px) and (max-width: 650px) {
+  /* line 7, ../../../components/sass/modules/_contact.scss */
+  #contact #form fieldset {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 50%;
+    float: left;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+/* line 18, ../../../components/sass/modules/_contact.scss */
+#contact #form input {
+  margin-bottom: 1em;
+}
+/* line 22, ../../../components/sass/modules/_contact.scss */
+#contact #form legend {
+  font-weight: bold;
+  padding-bottom: 1.5em;
+}
+/* line 26, ../../../components/sass/modules/_contact.scss */
+#contact #form label {
+  display: block;
+  font-size: 1em;
+}
+/* line 31, ../../../components/sass/modules/_contact.scss */
+#contact #form textarea {
+  display: block;
+  margin-bottom: 1.5em;
+  width: 20em;
+  height: 5em;
+}
+
+/* Scss Document */
+/* line 2, ../../../components/sass/modules/_footer.scss */
+div #socialmedia {
+  max-width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 12, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
+div #socialmedia:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+/* line 5, ../../../components/sass/modules/_footer.scss */
+div #socialmedia li {
+  float: left;
+}
+/* line 7, ../../../components/sass/modules/_footer.scss */
+div #socialmedia li a {
+  display: inline-block;
+  padding: 10px 10px 10px 45px;
+  text-decoration: none;
+  text-align: center;
+}
+@media (min-width: 0) and (max-width: 650px) {
+  /* line 7, ../../../components/sass/modules/_footer.scss */
+  div #socialmedia li a {
+    max-width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 12, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
+  div #socialmedia li a:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+}
+
+/* line 1, ../../../components/sass/modules/_prices.scss */
+#prices {
+  background: radial-gradient(1500px at 1300px, #4bd7f8, #0a3f75);
+  background-repeat: repeat;
+}
+/* line 37, ../../../components/sass/_mixins.scss */
+#prices:before, #prices:after {
+  content: '';
+  display: table;
+}
+/* line 42, ../../../components/sass/_mixins.scss */
+#prices:after {
+  clear: both;
+}
+@media (min-width: 650px) {
+  /* line 4, ../../../components/sass/modules/_prices.scss */
+  #prices section {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 33.33333%;
+    float: left;
+    padding-left: 3.33333%;
+    padding-right: 3.33333%;
+  }
+}
+@media (min-width: 450px) and (max-width: 650px) {
+  /* line 9, ../../../components/sass/modules/_prices.scss */
+  #prices section#packagePrice {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 50%;
+    float: left;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+/* line 14, ../../../components/sass/modules/_prices.scss */
+#prices section h2 {
+  color: #b5b7e1;
+  font-size: 1.3em;
+  line-height: 110%;
+  padding: 10px 0;
+}
+
+/* line 1, ../../../components/sass/modules/_intro.scss */
+#welcome {
+  background: #01172e;
+}
+/* line 3, ../../../components/sass/modules/_intro.scss */
+#welcome .introduction {
+  padding: 0 20px;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+/* line 8, ../../../components/sass/modules/_intro.scss */
+#welcome .introduction h1 {
+  font-size: 2em;
+  font-weight: 700;
+  line-height: 1.3em;
+}
+/* line 14, ../../../components/sass/modules/_intro.scss */
+#welcome .introduction p {
+  color: #ffffff;
+  line-height: 1.2em;
+}
+
+/* line 2, ../../../components/sass/modules/_nav.scss */
+header #nav .navbar {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background: #01172e;
+}
+/* line 12, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
+header #nav .navbar:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+/* line 8, ../../../components/sass/modules/_nav.scss */
+header #nav .navbar a {
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  padding: 5px;
+  font-size: 1.5em;
+}
+@media (max-width: 650px) {
+  /* line 8, ../../../components/sass/modules/_nav.scss */
+  header #nav .navbar a {
+    font-size: 1.2em;
+  }
+  /* line 18, ../../../components/sass/modules/_nav.scss */
+  header #nav .navbar a span {
+    display: none;
+  }
+}
+/* line 25, ../../../components/sass/modules/_nav.scss */
+header #nav .navbar ul {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 66.66667%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+}
+/* line 27, ../../../components/sass/modules/_nav.scss */
+header #nav .navbar ul li {
+  float: left;
+}
+/* line 29, ../../../components/sass/modules/_nav.scss */
+header #nav .navbar ul li a {
+  color: #ffffff;
+  background: #01172e;
+  font: 100 1em/1em "Lato", Arial, sans-serif;
+  font-size: 1em;
+  display: inline-block;
+  padding: 10px 10px 10px 45px;
+  text-decoration: none;
+  /* &:hover {
+  	background-color: $navHover;
+  	color: $dark;
+  } //hover
+  */
+}
+@media (min-width: 0) and (max-width: 650px) {
+  /* line 29, ../../../components/sass/modules/_nav.scss */
+  header #nav .navbar ul li a {
+    padding: 10px 12px;
+  }
+  /* line 47, ../../../components/sass/modules/_nav.scss */
+  header #nav .navbar ul li a::after {
+    content: '\000a0';
+    display: block;
+  }
+  /* line 51, ../../../components/sass/modules/_nav.scss */
+  header #nav .navbar ul li a span {
+    display: none;
+  }
+}
+@media (min-width: 650px) and (max-width: 960px) {
+  /* line 29, ../../../components/sass/modules/_nav.scss */
+  header #nav .navbar ul li a {
+    padding-left: 15px;
+  }
+}
+/* line 58, ../../../components/sass/modules/_nav.scss */
+header #nav .navbar ul li a.active {
+  background-color: #DF4848;
+  color: #ffffff;
+}
+
+/* line 1, ../../../components/sass/modules/_sites.scss */
+#sites {
+  background: #01172e;
+  /*heading {
+  	//margin-top: 20px 0;
+  	@include container(90%);
+  	@include breakpoint($medium) {
+  		@include container;
+  		@include pad(1,1);
+  	} //breakpoint
+  } //heading
+  */
+}
+/* line 3, ../../../components/sass/modules/_sites.scss */
+#sites h1 {
+  padding: 0 20px;
+}
+/* line 16, ../../../components/sass/modules/_sites.scss */
+#sites .site {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 9.16667%;
+  padding-right: 9.16667%;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  padding: 200px 0;
+}
+/* line 12, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
+#sites .site:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+@media (min-width: 650px) {
+  /* line 16, ../../../components/sass/modules/_sites.scss */
+  #sites .site {
+    padding-left: 59.16667%;
+    padding-right: 9.16667%;
+  }
+}
+/* line 29, ../../../components/sass/modules/_sites.scss */
+#sites .site .content {
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+}
+/* line 34, ../../../components/sass/modules/_sites.scss */
+#sites .site .content h1 {
+  color: #DF4848;
+}
+/* line 41, ../../../components/sass/modules/_sites.scss */
+#sites #horseshoeBay {
+  background: linear-gradient(to bottom, rgba(153, 255, 255, 0), rgba(1, 14, 31, 0)), url("../images/sites/horseshoeBay.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/* line 45, ../../../components/sass/modules/_sites.scss */
+#sites #bluff {
+  background: linear-gradient(to bottom, rgba(153, 255, 255, 0), rgba(1, 14, 31, 0)), url("../images/sites/bluff1.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/* line 49, ../../../components/sass/modules/_sites.scss */
+#sites #graniteIsland {
+  background: linear-gradient(to bottom, rgba(153, 255, 255, 0), rgba(1, 14, 31, 0)), url("../images/sites/graniteIsland1.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/* line 53, ../../../components/sass/modules/_sites.scss */
+#sites #aldingaBay {
+  background: linear-gradient(to bottom, rgba(153, 255, 255, 0), rgba(1, 14, 31, 0)), url("../images/sites/aldingaBay.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* line 2, ../../../components/sass/modules/_welcome.scss */
+#intro .fullheight {
+  background: linear-gradient(to bottom, rgba(153, 255, 255, 0), rgba(1, 14, 31, 0)), url("../images/welcomePage.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+/* line 12, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
+#intro .fullheight:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+/* line 10, ../../../components/sass/modules/_welcome.scss */
+#intro .fullheight .hgroup {
+  padding: 100px 0;
+}
+/* line 13, ../../../components/sass/modules/_welcome.scss */
+#intro .fullheight .hgroup h1 {
+  color: #ffffff;
+  font-size: 5em;
+  font-weight: 700;
+  line-height: .8em;
+  text-shadow: #000000 0 0 20px;
+  text-align: center;
+}
+/* line 22, ../../../components/sass/modules/_welcome.scss */
+#intro .fullheight .hgroup h2 {
+  display: block;
+  color: #ffffff;
+  width: 90%;
+  max-width: 350px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px;
+  font-size: 1.3em;
+  line-height: .9em;
+  text-shadow: #000000 0 0 20px;
+}
+/* line 35, ../../../components/sass/modules/_welcome.scss */
+#intro .fullheight .hgroup p {
+  text-align: center;
+}
+/* line 38, ../../../components/sass/modules/_welcome.scss */
+#intro .fullheight .hgroup a {
+  text-decoration: none;
+  color: #ffffff;
+}
